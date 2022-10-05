@@ -2,4 +2,4 @@
 Frontend Mentor - Tip calculator app
 
 
-A small app that counts the tips based on the bill.
+This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!
