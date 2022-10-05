@@ -30,25 +30,25 @@ h3 {
     text-align: end;
     color: hsl(183, 100%, 15%) !important;
     font-size: x-large;
-    background-color: hsl(185, 41%, 84%, 0.3);
-
+    background-color: hsl(189, 41%, 97%, 1.0);
 }
-
-span {
-    position: relative;
-}
-
-span::before {
-    content: "$";
-    font-family: 'Space Mono';
-    font-size: 2.5em;
+.input-symbol-dollar {
     position: absolute;
-    left: 5px;
-    top: 35%;
-    transform: translateY(-50%);
-    color: hsl(184, 14%, 56%);
+    margin-left: 1em;
+    margin-top: 0.85em;
+    padding-top: 0.1em;
+
 }
 
+.input-symbol-person {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.input-symbol::before {
+    margin-left: 2em;
+}
 
 /* Μην εμφανίζονται τα βελακια στο πλαι */
 /* Chrome, Safari, Edge, Opera */
