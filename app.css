@@ -1,0 +1,203 @@
+body {
+    font-family: 'Space Mono';
+    background-color: hsl(185, 41%, 84%);
+}
+
+h3 {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    padding-top: 15%;
+    padding-bottom: 5%;
+    letter-spacing: 10px;
+
+}
+
+.container {
+    border: none;
+    width: 70%;
+    margin-left: 15%;
+    background-color: white;
+    border-radius: 1.5em;
+}
+
+.input {
+    padding: 0.2em;
+    box-sizing: border-box;
+    width: 100% !important;
+    cursor: pointer;
+    border-radius: 0.40em;
+    border: none;
+    text-align: end;
+    color: hsl(183, 100%, 15%) !important;
+    font-size: x-large;
+    background-color: hsl(185, 41%, 84%, 0.3);
+
+}
+
+span {
+    position: relative;
+}
+
+span::before {
+    content: "$";
+    font-family: 'Space Mono';
+    font-size: 2.5em;
+    position: absolute;
+    left: 5px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: hsl(184, 14%, 56%);
+}
+
+
+/* Μην εμφανίζονται τα βελακια στο πλαι */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+#tip {
+    box-sizing: border-box;
+    width: 100%;
+    height: 68px;
+    cursor: pointer;
+    border-radius: 0.40em;
+    border: none;
+    text-align: end;
+    background-color: hsl(185, 41%, 84%, 0.3);
+    font-size: x-large;
+    padding-right: 0.5em;
+}
+
+#tip:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+td {
+    width: 50px !important;
+}
+
+.btns {
+    border-radius: 0.40em;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: x-large;
+}
+
+.btns:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+.label {
+    color: hsl(186, 14%, 43%);
+}
+
+
+/* 2nd Table */
+
+
+#tipMount {
+    /* Don't Change line(line break) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.c1 {
+    font-size: medium;
+    color: hsl(186, 14%, 43%);
+}
+
+.c2 {
+    font-size: xx-large;
+    color: hsl(172, 67%, 45%);
+}
+
+.c11 {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1em;
+
+}
+
+.span1 {
+    color: white;
+}
+
+#resetBtn {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2em;
+    border-radius: 0.4em;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: larger;
+}
+
+#resetBtn:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+/* Responsive */
+
+@media screen and (max-width:750px) {
+    .container {
+        width: 100%;
+        margin: auto;
+
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    .container {
+        margin-left: auto;
+
+    }
+}
+
+@media screen and (max-width:1510px) {
+    .row {
+        display: block;
+    }
+
+    .colTwo {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .colTwo {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .colTwo {
+        padding: 0;
+        margin: 0;
+    }
+
+    #resetBtn {
+        margin-right: 10% !important;
+    }
+}
+
+#table1 {
+    border-color: white !important;
+}
+
+#tipTable {
+    border-color: hsl(183, 100%, 15%) !important;
+}
