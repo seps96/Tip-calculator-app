@@ -6,10 +6,14 @@ body {
 h3 {
     background-color: hsl(185, 41%, 84%);
     color: hsl(183, 100%, 15%);
-    padding-top: 15%;
+    padding-top: 8%;
     padding-bottom: 5%;
     letter-spacing: 10px;
 
+}
+
+.header {
+    height: 300px;
 }
 
 .container {
