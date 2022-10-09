@@ -196,16 +196,18 @@ tip.addEventListener('input', () => {
         }
 
         const numPeople = document.querySelector('#people').value / 1;
-        console.log(numPeople);
         if (numPeople !== false && numPeople !== 0) {
             document.querySelector('#people').style.border = 'none';
             document.querySelector('#newLabel').remove();
             x = 0;
             let mount = 0;
-            mount = bill * tipV / 100;
-            tipMount.innerText = `$ ${mount}`;
-            let sumP = mount / numPeople;
-            total.innerText = `$ ${sumP}`;
+            let i = 0;
+            i = bill * tipV / 100;
+            mount = i / numPeople;
+            tipMount.innerText = `$ ${mount.toFixed(2)}`;
+            let sumP = (bill + i) / numPeople;
+            total.innerText = `$ ${sumP.toFixed(2)}`;
+            console.log(i, mount, sumP, bill, i, numPeople);
             break;
         }
 
@@ -228,24 +230,35 @@ reset.addEventListener('click', () => {
 
 function tipCalc(bill, numPeople) {
     let mount = 0;
+    let x = 0;
     if (btn === 5) {
-        mount = bill * 0.05;
-        tipMount.innerText = `$ ${mount}`;
+        x = bill * 0.05;
+        mount = x / numPeople;
+        tipMount.innerText = `$ ${mount.toFixed(2)}`;
     } else if (btn === 10) {
-        mount = bill * 0.1;
-        tipMount.innerText = `$ ${mount}`;
+        x = bill * 0.1;
+        mount = x / numPeople;
+        tipMount.innerText = `$ ${mount.toFixed(2)}`;
     } else if (btn === 15) {
-        mount = bill * 0.15;
-        tipMount.innerText = `$ ${mount}`;
+        x = bill * 0.15;
+        mount = x / numPeople;
+        tipMount.innerText = `$ ${mount.toFixed(2)}`;
     } else if (btn === 25) {
-        mount = bill * 0.25;
-        tipMount.innerText = `$ ${mount}`;
+        x = bill * 0.25;
+        mount = x / numPeople;
+        tipMount.innerText = `$ ${mount.toFixed(2)}`;
     } else if (btn === 50) {
-        mount = bill * 0.5;
-        tipMount.innerText = `$ ${mount}`;
+        x = bill * 0.5;
+        mount = x / numPeople;
+        tipMount.innerText = `$ ${mount.toFixed(2)}`;
     }
-    let sumP = mount / numPeople;
-    total.innerText = `$ ${sumP}`;
+
+    console.log(bill, x, mount, numPeople);
+    let sumP = (bill + x) / numPeople;
+    total.innerText = `$ ${sumP.toFixed(2)}`;
 }
+
+
+
 
 
