@@ -253,7 +253,7 @@ function tipCalc(bill, numPeople) {
         tipMount.innerText = `$ ${mount.toFixed(2)}`;
     }
 
-    console.log(bill, x, mount, numPeople);
+    //console.log(bill, x, mount, numPeople);
     let sumP = (bill + x) / numPeople;
     total.innerText = `$ ${sumP.toFixed(2)}`;
 }
